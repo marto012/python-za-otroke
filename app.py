@@ -47,3 +47,4 @@ if __name__ == "__main__":
 # 1.
 # naloga_1()
 # 2.
+# naloga_2
