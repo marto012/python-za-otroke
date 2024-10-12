@@ -1,6 +1,7 @@
 import turtle
 
 
+# 1. naloga(nal 1)
 def naloga_1():
     martin = turtle.Pen()
     martin.reset()
@@ -18,6 +19,7 @@ def naloga_1():
     turtle.done()
 
 
+# 2. naloga(nal 2)
 def naloga_2():
     martin = turtle.Pen()
     martin.reset()
@@ -59,6 +61,7 @@ def naloga_2():
     turtle.done()
 
 
+# 3. naloga(nal 3)
 def naloga_3():
     martin = turtle.Pen()
     martin.reset()
