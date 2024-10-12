@@ -40,8 +40,21 @@ def naloga_2():
     martin.color('yellow')
     martin.begin_fill()
     martin.circle(15)
-    martin.end_fill
+    martin.end_fill()
+    martin.color('black')
+    martin.up()
+    martin.backward(1)
+    martin.begin_fill()
+    martin.down()
+    martin.forward(2)
+    martin.left(90)
+    martin.forward(20)
+    martin.left(90)
+    martin.forward(2)
+    martin.left(90)
+    martin.forward(20)
+    martin.end_fill()
+    martin.hideturtle()
 
     turtle.done()
 
-naloga_2()
