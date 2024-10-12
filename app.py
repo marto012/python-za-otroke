@@ -5,18 +5,20 @@ from barvne_crte import barvne_crte
 from risanje_po_koordinatah import risanje_po_koordinatah
 from risanje_z_zelvo_zelvja_grafika_nal import naloga_1
 from risanje_z_zelvo_zelvja_grafika_nal import naloga_2
+from risanje_z_zelvo_zelvja_grafika_nal import naloga_3
 
 
 def main():
-    print("Izberi funkcijo, ki jo želiš izvesti:")
+    print("Izberi program, ki ga želiš izvesti:")
     print("1. vagon")
     print("2. pravokotnik")
     print("3. barvne črte")
     print("4. risanje po koordinatah")
     print("5. naloga 1")
-    print('6. naloga 2')
+    print("6. naloga 2")
+    print('7. naloga 3')
 
-    choice = input("Vnesi številko funkcije (1-6): ")
+    choice = input("Vnesi število programa (1-7): ")
 
     if choice == "1":
         vagon()
@@ -28,8 +30,10 @@ def main():
         risanje_po_koordinatah()
     elif choice == "5":
         naloga_1()
-    elif choice == '6':
+    elif choice == "6":
         naloga_2()
+    elif choice == "7":
+        naloga_3()
     else:
         print("Neveljavna izbira!")
 
@@ -51,4 +55,6 @@ if __name__ == "__main__":
 # 1.
 # naloga_1()
 # 2.
-# naloga_2
+# naloga_2()
+# 3.
+# naloga_3()

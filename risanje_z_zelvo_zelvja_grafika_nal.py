@@ -58,3 +58,22 @@ def naloga_2():
 
     turtle.done()
 
+
+def naloga_3():
+    martin = turtle.Pen()
+    martin.reset()
+
+    martin.color('orange')
+    martin.pensize(5)
+    martin.up()
+    martin.goto(-100, -100)
+    martin.down()
+    martin.goto(0, 200)
+    martin.goto(100, -100)
+    martin.up()
+    martin.goto(50, 50)
+    martin.down()
+    martin.goto(-50, 50)
+    martin.hideturtle()
+
+    turtle.done()
