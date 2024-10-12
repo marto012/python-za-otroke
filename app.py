@@ -1,9 +1,9 @@
 # RISANJE Z ŽELVO-ŽELVJA GRAFIKA
-turtle.done()
 import turtle
+turtle.done()
 martin = turtle.Pen()
 martin.reset()
-'''martin.forward(100)'''
+# martin.forward(100)
 # 1. primer
 '''martin = turtle.Pen()
 martin.forward(100)
@@ -31,4 +31,14 @@ martin.up()
 martin.forward(30)
 martin.down()'''
 # 3. primer
-
+martin.color('magenta')
+martin.begin_fill()
+martin.forward(100)
+martin.left(90)
+martin.forward(50)
+martin.left(90)
+martin.forward(100)
+martin.left(90)
+martin.forward(50)
+martin.left(90)
+martin.end_fill
