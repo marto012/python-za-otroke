@@ -26,7 +26,7 @@ def main():
     print('10. naloga 5')
     print('11. naloga 6')
 
-    choice = input("Vnesi število programa (1-10): ")
+    choice = input("Vnesi število programa (1-11): ")
 
     if choice == "1":
         kvadrat_z_zanko_while()
