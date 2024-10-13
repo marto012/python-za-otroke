@@ -11,6 +11,7 @@ def devetkotnik():
         martin.left(360 / 9)
         i = i + 1
 
+    martin.hideturtle()
     turtle.done()
 
 
@@ -24,4 +25,5 @@ def krog():
         martin.left(360 / 120)
         i = i + 1
 
+    martin.hideturtle()
     turtle.done()

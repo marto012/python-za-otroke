@@ -1,15 +1,18 @@
 import turtle
 
 
-def kvadrat_z_zanko_while():
+def naloga_1():
     martin = turtle.Pen()
     martin.reset()
     i = 1
 
-    while i <= 4:
+    while i <= 6:
         martin.forward(50)
-        martin.left(90)
+        martin.left(360/6)
         i = i + 1
 
     martin.hideturtle()
     turtle.done()
+
+
+naloga_1()
