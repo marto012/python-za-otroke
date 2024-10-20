@@ -42,19 +42,3 @@ if __name__ == "__main__":
     main()
 
 
-# martin.forward(100)
-# 1. primer
-# pravokotnik()
-# 2. primer
-# barvne_crte()
-# 3. primer
-# vagon()
-# 4. primer
-# risanje_po_koordinatah()
-# naloge
-# 1.
-# naloga_1()
-# 2.
-# naloga_2()
-# 3.
-# naloga_3()

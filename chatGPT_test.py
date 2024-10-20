@@ -15,11 +15,11 @@ def draw_polygon(sides):
 
 def main():
     # Vprašaj uporabnika za število kotnikov
-    num_polygons = int(input("Koliko poligonov želite narišiti (minimalno 3 strani): "))
+    num_polygons = int(input("Kolikokotnik želiš narisarti (minimalno 3 kotnik): "))
 
     # Ustvari nov Turtle zaslon
     screen = turtle.Screen()
-    screen.title("Risanje enakostraničnih poligonov")
+    screen.title("Risanje kotnikov ")
 
     # Preveri, ali je število strani vsaj 3
     while num_polygons < 3:
