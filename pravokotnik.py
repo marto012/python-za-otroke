@@ -2,7 +2,7 @@ import turtle
 
 
 def pravokotnik():
-    martin = turtle.Pen()  # Create the turtle pen
+    martin = turtle.Pen()  # naredi turtle pen
 
     martin.forward(100)
     martin.left(90)

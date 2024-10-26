@@ -3,6 +3,9 @@ from kvadratki_v_vrsti import kvadratki_v_vrsti
 from vijuga import vijuga
 from funkcije_nal import naloga_1
 from funkcije_nal import naloga_2
+from funkcije_nal import naloga_3
+from funkcije_nal import naloga_4
+from funkcije_nal import naloga_5
 
 
 def main():
@@ -12,8 +15,11 @@ def main():
     print('3. vijuga')
     print('4. naloga 1')
     print('5. naloga 2')
+    print('6. naloga 3')
+    print('7. naloga 4')
+    print('8. naloga 5')
 
-    choice = input("Vnesi število programa (1-5): ")
+    choice = input("Vnesi število programa (1-8): ")
 
     if choice == "1":
         roza_iz_kvadratov_in_barvni_kvadrati()
@@ -29,6 +35,15 @@ def main():
 
     elif choice == '5':
         naloga_2()
+
+    elif choice == '6':
+        naloga_3
+
+    elif choice == '7':
+        naloga_4()
+
+    elif choice == '8':
+        naloga_5()
 
     else:
         print("Neveljavna izbira!")
