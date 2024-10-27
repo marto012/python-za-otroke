@@ -1,11 +1,9 @@
 import turtle
 
 
-martin = turtle.Pen()
-martin.reset()
-
-
 def naloga_1(velikost):
+    martin = turtle.Pen()
+
     def vrh(velikost):
         martin.left(60)
         martin.forward(velikost)
@@ -17,6 +15,7 @@ def naloga_1(velikost):
 
 
 def naloga_2(velikost_kvadrata):
+    martin = turtle.Pen()
     i = 1
 
     def kvadrat(velikost_kvadrata):
@@ -39,6 +38,7 @@ def naloga_2(velikost_kvadrata):
 
 
 def naloga_3(stevilo_kvadratov):
+    martin = turtle.Pen()
     j = 1
 
     def kvadrat():

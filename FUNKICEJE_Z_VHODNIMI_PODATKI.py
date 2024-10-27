@@ -1,4 +1,5 @@
 import turtle
+
 from kvadrat_poljubne_velikosti import kvadrat_poljubne_velikosti
 from pet_kvadratov_poljubne_velikosti import pet_kvadratov_poljubne_velikosti
 from poljubni_veckotnik import poljubni_veckotnik
