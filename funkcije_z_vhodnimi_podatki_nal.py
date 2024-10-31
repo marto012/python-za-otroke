@@ -1,6 +1,6 @@
 import turtle
 
-
+    
 def naloga_1(velikost):
     martin = turtle.Pen()
 
