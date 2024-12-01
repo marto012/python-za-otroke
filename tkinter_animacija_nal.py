@@ -98,6 +98,3 @@ def naloga_3():
 
     okno.mainloop()
 
-
-if __name__ == "__main__":
-     naloga_3()

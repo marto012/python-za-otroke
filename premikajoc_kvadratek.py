@@ -20,3 +20,4 @@ def premikajoc_kvadratek():
     platno.move(kvadratek, -200, -200)
 
     okno.mainloop()
+

@@ -30,3 +30,5 @@ def premikajoca_riba():
         i = i + 1
 
     okno.mainloop()
+
+
