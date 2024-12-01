@@ -85,16 +85,19 @@ def naloga_3():
     platno = tk.Canvas(okno, width=600, height=600)
     platno.pack()
 
-    krogec = platno.create_oval(300, 300, 300, 300, fill='blue')
+    krogec = platno.create_oval(300, 300, 330, 330, fill='blue')
 
     i = 1
     while i <= 10:
         okno.update()
         time.sleep(0.2)
-        x = randint(-200, 200) 
+        x = randint(-200, 200)
         y = randint(-200, 200)
         platno.move(krogec, x, y)
         i = i + 1
 
+    okno.mainloop()
 
-naloga_3()
+
+if __name__ == "__main__":
+     naloga_3()
