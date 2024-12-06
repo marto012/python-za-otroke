@@ -23,13 +23,13 @@ polozaj_ladje = platno.coords(ladja)
 def premik_ladje(event):
     if event.keysym == 'Left':
         hitrost = -20
-        if polozaj_ladje[0] < 0:
-            hitrost = 0    
+        if polozaj_ladje[1] < 0:
+            hitrost = 0   
         platno.move(ladja, hitrost, 0)
 
     else:
         hitrost = 20
-        if polozaj_ladje[6 >= 800]:
+        if polozaj_ladje[4] >= 800:
             hitrost = 0
         platno.move(ladja, hitrost, 0)
 
@@ -39,11 +39,11 @@ platno.bind_all('<Right>', premik_ladje)
 
 
 def premik_padalca():
-    platno.move(padalec, 0, 10)
+    platno.move(padalec, 0, hitrost_padalec)
 
 
 def premik_bomba():
-    platno.move(bomba, 0, 20)
+    platno.move(bomba, 0, hitrost_bomba)
 
 
 def premik_gor_padalec():
@@ -67,12 +67,11 @@ def dotik_bomba():
         
 
 def dotik_padalec():
-    if (polozaj_padalec[3] >= polozaj_ladje[1] 
-            and polozaj_padalec[3] <= polozaj_ladje[1]+10):
-        if (polozaj_padalec[2] >= polozaj_ladje[0] 
-                and polozaj_padalec[2] <= polozaj_ladje[6]+15):
+    polozaj_ladje = platno.coords(ladja)
+    if polozaj_padalec[3] >= polozaj_ladje[1] and polozaj_padalec[3] <= polozaj_ladje[1]+20:
+        if polozaj_padalec[2] >= polozaj_ladje[0] and polozaj_padalec[2] <= polozaj_ladje[6]+20:
             return True
-
+        
         else: 
             return False
  
@@ -84,6 +83,8 @@ def izpis():
 
 tocke = 0
 zivljenja = 3
+hitrost_padalec = 5
+hitrost_bomba = 10
 
 while zivljenja > 0:
     okno.update()
@@ -106,6 +107,13 @@ while zivljenja > 0:
     if dotik_bomba():
         premik_gor_bomba()
         zivljenja = zivljenja - 1
+
+    if random.randint(1, 100) == 1:
+        hitrost_bomba = hitrost_bomba + 1
+        hitrost_padalec = hitrost_padalec + 1
+
+if zivljenja == 0:
+    platno.itemconfig(stevilo_zivljenj, text=str(zivljenja))
 
 print('Število doseženih točk:', tocke)
 game_over = platno.create_text(400, 300, text='GAME OVER', font=('Comic Sans MS', 100,))
